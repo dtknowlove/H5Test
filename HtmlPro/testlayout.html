@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>布局测试</title>
+</head>
+<body>
+	<iframe src="textformat.html" width="300" height="100" name="iframe_t" frameborder="10"></iframe>
+	<p><a href="https://www.sina.com.cn/" target="iframe_t">新浪首页</a></p>
+	<div style="color:#0000FF">
+		<h3>div中的h3标题</h3>
+		<p>div中的段落</p>
+	</div>
+	<div style="color:#8312AA">
+		<h3>div中的h3标题</h3>
+		<p>div中的段落</p>
+	</div>
+	<div id="container" style="width: 500px">
+		<div id="header" style="background-color: #FFA500;">
+		<h1 style="margin-bottom: 0;">主要的网页标题</h1>			
+		</div>
+		<div id="menu" style="background-color: #FFD700;height: 200px;width: 100px;float: left;">
+		<b>菜单</b><br>
+		HTML<br>
+		CSS<br>
+		JavaScript			
+		</div>	
+		<div id="content" style="background-color: #EEEEEE;height: 200px;width: 400px;float: left;">
+		这里是内容
+		</div>
+		<div id="footer" style="background-color: #FFA500;clear: both;text-align: center;">
+		版权 © lzh.com	
+		</div>
+	</div>
+
+	<form action="">
+		<fieldset>
+			<legend>Personal information:</legend>
+			First name: <input type="text" name="firstname" value="dtknowlove"><br>
+			Last name: <input type="text" name="lastname" value="L"><br>
+			Pass word:  <input type="password" name="password"><br>
+			<label for="male">male</label>
+			<input type="radio" name="sex" id="male" value="male">male<br>
+			<input type="radio" name="sex" value="female">Female<br>
+			<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+			<input type="checkbox" name="vehicle" value="Car">I have a car<br>
+			<input type="submit" name="Submit" value="确认">
+			<input type="reset" name="Reset" value="重置"><br>
+			<select name="cars">
+				<optgroup label="Swedish casr" disabled>
+					<option value="volvo">Volvo</option>
+					<option value="audi">Audi</option>
+				</optgroup>
+				<optgroup label="lll casr">
+					<option value="bens" selected>Bens</option>
+					<option value="bingli">Bingli</option>
+				</optgroup>
+			</select><br>
+			<input type="button" value="Hello world!" disabled><br>
+			<input list="browser" name="browser">
+			<datalist id="browser">
+				<option value="Internet Explorer">
+				<option value="Firefox">
+				<option value="Chrome">
+				<option value="Opera">
+				<option value="Safari">
+			</datalist><br>			
+		</fieldset>
+	</form>
+	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">-1
+		<input type="range" id="a" value="50" min="-1" max="100" step="5" >100
+		+<input type="number" id="b" value="50">
+		=<output name="x" for="a b"></output>
+	</form>
+	<textarea rows="3" cols="5">
+		我是一个文本框，且不能输入。
+	</textarea>
+</body>
+</html>

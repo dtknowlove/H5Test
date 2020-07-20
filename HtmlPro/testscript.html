@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>脚本测试</title>
+	<style>
+		body
+		{
+			background-color: cyan;
+		}
+		#demo
+		{
+			color: red;
+			text-align: center;
+			background-color: yellow;
+		}
+		.center
+		{
+			text-align: center;
+			color: blue
+		}
+	</style>
+</head>
+<body>
+<p id ="demo">JavaScripts 可以出发事件，比如点击按钮。</p>
+<p class="center">这是一个段落</p>
+<script>
+	document.write("Hello,world!");
+	function onbtnclick() 
+	{
+		document.getElementById('demo').innerHTML="Hello Javascript!";
+	}
+</script>
+<br>
+<button type="button" onclick="onbtnclick()">点击一下</button>
+<noscript>抱歉，你的浏览器不支持 Javascript!</noscript>
+</body>
+</html>
